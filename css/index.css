@@ -138,6 +138,7 @@ button:hover{
 }
 /* Mobile media query */
 @media(max-width: 500px){
+    /* header */
     nav{
         display: flex;
         justify-content: space-evenly;
@@ -148,4 +149,22 @@ button:hover{
     .title-container div{
         width: 100%;
     }
+    /* artist container */
+    .artists-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .artist{
+        width: 50%;
+    }
+    .artist img{
+        height: 45%;
+    }
+    .bio{
+        font-size: 1.2rem;
+        width: 100%;
+        margin: auto;
+    }
+
 }
