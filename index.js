@@ -261,9 +261,9 @@ function get20s(array){
 
 function removeArtist(array, [id], num){
   array.splice([id], num);
-  return array.length;
+  return newArray.length;
 }
-console.log(removeArtist(artists, [0], 1));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -281,10 +281,16 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+    array.push({id: 20,
+      name: 'Andrew Busby', 
+      years: 1989 - 2021,
+      genre: 'Web Design', 
+      nationality: 'American',
+      bio: 'Web Developer who loves life and his family. Enjoys coding and video games'});
+    return array;
   }
-
+console.log(addArtist(artists));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
